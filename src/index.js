@@ -15,6 +15,7 @@ connectDB()
   )
   .catch((err) => {
     console.log("DB connection failed!", err);
+    process.exit(0);
   });
 
 // import express from "express";
